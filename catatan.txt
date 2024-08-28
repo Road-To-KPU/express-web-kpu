@@ -1,0 +1,13 @@
+kekurangan : 
+1. api belum aman
+2. web belum responsive
+
+progress :
+1. menu filter berjalan
+2. klik kanan sudah disable
+
+on proses : 
+1. desain menu admin
+2. visitor counter
+3. baackend crud
+

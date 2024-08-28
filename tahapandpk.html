@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daftar Pemilih Tetap</title>
+    <link rel="shortcut icon" href="/assets/icon-app.png" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/style.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="foto">
+        <img src="/assets/icon-app.png" alt="" />
+        <span class="satu"> KOMISI PEMILIHAN UMUM <br />SULAWESI SELATAN</span>
+      </div>
+      <ul>
+        <li>
+          <a href="/">
+            <i class="bx bxs-grid-alt bx-flip-horizontal"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href=""
+            ><i class="bx bx-list-ul"></i> <span>Daftar Pemilih Khusus</span></a
+          >
+        </li>
+        <li>
+          <a href=""
+            ><i class="bx bx-list-plus"></i>
+            <span>Daftar Pemilih Tambahan</span></a
+          >
+        </li>
+        <li>
+          <a href="">
+            <i class="bx bxs-group"></i> <span>Daftar Pemilih Khusus</span></a
+          >
+        </li>
+        <li>
+          <a href=""><i class="bx bxs-map"></i> <span>Titik Koordinat</span></a>
+        </li>
+        <li>
+          <a href=""
+            ><i class="bx bxs-map-pin"></i> <span>Lokasi Khusus</span></a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <section class="halaman-utama">
+      <nav>
+        <div class="sidebar-tombol">
+          <i class="bx bx-menu"></i>
+          <span>Daftar Pemilih Khusus</span>
+        </div>
+        <a href="/">
+          <i class="bx bx-log-out"></i>
+          <span>Kembali</span>
+        </a>
+      </nav>
+
+      <div class="konten">
+        <div class="title">
+          <p class="text">PROVINSI SULAWESI SELATAN</p>
+        </div>
+        <div class="filter">
+          <div class="dpt"><a href="/dpt/dpt">Daftar Pemilih Tetap</a></div>
+          <div class="jk">
+            <a href="/dpt/jeniskelamin">Jenis Kelamin</a>
+          </div>
+          <div class="td"><a href="/dpt/tunadaksa">Tuna Daksa</a></div>
+          <div class="tr"><a href="/dpt/tunarungu">Tuna Rungu</a></div>
+          <div class="tg"><a href="/dpt/tunagrahita">Tuna Grahita</a></div>
+          <div class="lain">
+            <a href="/dpt/disabilitaslainnya">Disabilitas Lainnya</a>
+          </div>
+        </div>
+        <div class="peta">
+          <div class="lapis">Luwu Utara</div>
+          <a href="/rincian/dpt/luwu_utara"
+            ><i class="bx bxs-map luwu-utara"></i
+          ></a>
+          <div class="lapis1">Luwu Timur</div>
+          <a href="/rincian/dpt/luwu_timur"
+            ><i class="bx bxs-map luwu-timur"></i
+          ></a>
+          <img src="/assets/peta_sulsel.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="modal container">
+      <div class="modal__container" id="modal-container">
+        <div class="modal__content">
+          <div class="judul2">
+            <div class="isi1">Kecamatan Sinjai Utara</div>
+          </div>
+          <div class="rinci">
+            <div class="kiri">
+              <span
+                >Provinsi <br />
+                Kabupaten <br />
+                Kecamatan <br />
+                Pemilih Tetap <br />
+                Pemilih Tambahan <br />
+                Pemilih Disabilitas <br />
+                Pemilih TMS</span
+              >
+            </div>
+            <div class="kanan">
+              <span
+                >Sulawesi Selatan <br />
+                Sinjai <br />
+                Sinjai Utara <br />
+                000.000 <br />
+                000.000 <br />
+                000.000 <br />
+                000.000</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="/assets/javascript/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </body>
+</html>

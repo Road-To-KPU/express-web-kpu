@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="shortcut icon" href="assets/icon-app.png" />
+    <link rel="stylesheet" type="text/css" href="/assets/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="foto">
+        <img src="assets/icon-app.png" alt="" />
+        <span class="satu"> KOMISI PEMILIHAN UMUM <br />SULAWESI SELATAN</span>
+      </div>
+      <ul>
+        <li>
+          <a href="">
+            <i class="bx bxs-grid-alt bx-flip-horizontal"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="/dpt/dpt"
+            ><i class="bx bx-list-ul"></i> <span>Daftar Pemilih Tetap</span></a
+          >
+        </li>
+        <li>
+          <a href="/dptb/dptb"
+            ><i class="bx bx-list-plus"></i>
+            <span>Daftar Pemilih Tambahan</span></a
+          >
+        </li>
+        <li>
+          <a href="">
+            <i class="bx bxs-group"></i> <span>TPS Lokasi Khusus</span></a
+          >
+        </li>
+        <li>
+          <a href=""><i class="bx bxs-buildings"></i> <span>SATKER</span></a>
+        </li>
+        <li>
+          <a href=""><i class="bx bxs-area"></i> <span>DAPIL</span></a>
+        </li>
+        <li>
+          <a href=""
+            ><i class="bx bxs-pie-chart-alt"></i>
+            <span>Partisipasi Pemilu/Pilkada</span></a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <section class="halaman-utama">
+      <nav>
+        <div class="sidebar-tombol">
+          <i class="bx bx-menu"></i>
+          <span>Dashboard</span>
+        </div>
+      </nav>
+
+      <div class="konten">
+        <!-- box -->
+        <div class="tampilan-box">
+          <div class="box">
+            <div class="sisi-kiri">
+              <div class="teks">
+                <a href="/dpt/dpt">Daftar Pemilih Tetap</a>
+              </div>
+              <div class="nomor" id="dpt"></div>
+            </div>
+            <div class="sisi-kanan">
+              <div class="icon"><i class="bx bx-list-ul"></i></div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="sisi-kiri">
+              <div class="teks">
+                <a href="/dptb/dptb">Daftar Pemilih Tambahan</a>
+              </div>
+              <div class="nomor" id="dptb"></div>
+            </div>
+            <div class="sisi-kanan">
+              <div class="icon"><i class="bx bx-list-plus"></i></div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="sisi-kiri">
+              <div class="teks"><a href="#">TPS Lokasi Khusus</a></div>
+              <div class="nomor" id="dpk"></div>
+            </div>
+            <div class="sisi-kanan">
+              <div class="icon"><i class="bx bxs-group"></i></div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="sisi-kiri">
+              <div class="teks"><a href="#">SATKER</a></div>
+              <div class="nomor" id="titik_koordinat"></div>
+            </div>
+            <div class="sisi-kanan">
+              <div class="icon"><i class="bx bxs-buildings"></i></div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="sisi-kiri">
+              <div class="teks"><a href="#">DAPIL</a></div>
+              <div class="nomor" id="loksus"></div>
+            </div>
+            <div class="sisi-kanan">
+              <div class="icon"><i class="bx bxs-area"></i></div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="sisi-kiri">
+              <div class="teks"><a href="#">Partisipasi Pemilu/Pilkada</a></div>
+              <div class="nomor" id="loksus"></div>
+            </div>
+            <div class="sisi-kanan">
+              <div class="icon"><i class="bx bxs-pie-chart-alt"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="isi-diagram">
+          <div class="diagram">
+            <div class="judul-diagram">Jenis Kelamin</div>
+            <canvas id="myChart" width="380px" height="300px"></canvas>
+          </div>
+          <div class="diagram">
+            <div class="judul-diagram">Klasifikasi Usia</div>
+
+            <canvas id="myChart1" width="380px" height="380px"></canvas>
+          </div>
+          <div class="diagram">
+            <div class="judul-diagram">Disabilitas</div>
+
+            <canvas id="myChart2" width="380px" height="380px"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="assets/javascript/index.js"></script>
+    <script src="assets/javascript/dptindex.js"></script>
+    <script src="assets/javascript/dptbindex.js"></script>
+    <script src="assets/javascript/dpkindex.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/javascript/chartindex1.js"></script>
+    <script src="assets/javascript/chartindex2.js"></script>
+    <script src="assets/javascript/chartindex3.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/javascript/off.js"></script>
+  </body>
+</html>

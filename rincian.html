@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="shortcut icon" href="/assets/icon-app.png" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="/assets/style.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="foto">
+        <img src="/assets/icon-app.png" alt="" />
+        <span class="satu"> KOMISI PEMILIHAN UMUM <br />SULAWESI SELATAN</span>
+      </div>
+      <ul>
+        <li>
+          <a href="/">
+            <i class="bx bxs-grid-alt bx-flip-horizontal"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href=""
+            ><i class="bx bx-list-ul"></i> <span>Daftar Pemilih Tetap</span></a
+          >
+        </li>
+        <li>
+          <a href=""
+            ><i class="bx bx-list-plus"></i>
+            <span>Daftar Pemilih Tambahan</span></a
+          >
+        </li>
+        <li>
+          <a href="">
+            <i class="bx bxs-group"></i> <span>TPS Lokasi Khusus</span></a
+          >
+        </li>
+        <li>
+          <a href=""><i class="bx bxs-buildings"></i> <span>SATKER</span></a>
+        </li>
+        <li>
+          <a href=""
+            ><i class="bx bxs-area"></i> <span>DAPIL</span></a
+          >
+        </li>
+        <li>
+          <a href=""
+            ><i class="bx bxs-pie-chart-alt"></i> <span>Partisipasi Pemilu/Pilkada</span></a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <section class="halaman-utama">
+      <nav>
+        <div class="sidebar-tombol">
+          <i class="bx bx-menu"></i>
+          <span>Rincian Kabupaten</span>
+        </div>
+        <a href="/dpt/dpt">
+          <i class="bx bx-log-out"></i>
+          <span>Kembali</span>
+        </a>
+      </nav>
+
+      <div class="konten">
+        <div class="isi-diagram1">
+          <div class="peta1">
+            <img src="/assets/peta/wajo.png" alt=""  />
+          </div>
+          <div class="bungkusdiagram2">
+            <div class="judul-usia">Klasifikasi Usia</div>
+            <div class="diagram1">
+              <canvas id="myChart1" width="400px" height="300px"></canvas>
+            </div>
+          </div>
+          <div class="bungkusdiagram3">
+            <div class="judul-usia">Pemilih Disabilitas</div>
+            <div class="diagram1">
+              <canvas id="myChart2" width="400px" height="300px"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="isi-diagram1">
+          <div class="bungkusdiagram3">
+            <div class="judul-usia">Rincian Pemilih</div>
+            <div class="diagram1">
+              <canvas id="myChart" width="300px" height="300px"></canvas>
+            </div>
+          </div>
+          <div class="rincian-usia">
+            <div class="judul-usia">Rincian Usia</div>
+            <div class="latar-usia">
+              <div class="bungkus-box">
+                <div class="box1">
+                  <div class="sisi-kiri">
+                    <img src="/assets/genz.png" alt="" />
+                  </div>
+                  <div class="sisi-kanan">
+                    <span id="gen_z"></span>
+                  </div>
+                </div>
+                <div class="box1">
+                  <div class="sisi-kiri">
+                    <img src="/assets/genx.png" alt="" />
+                  </div>
+                  <div class="sisi-kanan">
+                    <span id="gen_x"></span>
+                  </div>
+                </div>
+                <div class="box1">
+                  <div class="sisi-kiri">
+                    <img src="/assets/preboomer.png" alt="" />
+                  </div>
+                  <div class="sisi-kanan">
+                    <span id="pre_boomer"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="bungkus-box">
+                <div class="box1">
+                  <div class="sisi-kiri">
+                    <img src="/assets/genmilenial.png" alt="" />
+                  </div>
+                  <div class="sisi-kanan">
+                    <span id="gen_milenial"></span>
+                  </div>
+                </div>
+                <div class="box1">
+                  <div class="sisi-kiri">
+                    <img src="/assets/babyboomer.png" alt="" />
+                  </div>
+                  <div class="sisi-kanan">
+                    <span id="baby_boomer"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rincian-disabilitas">
+            <div class="judul-disabilitas">Rincian Disabilitas</div>
+            <div class="latar-disabilitas">
+              <div class="bungkus-box">
+                <div class="box2">
+                  <div class="teks">Tuna Daksa</div>
+                </div>
+                <div class="box2">
+                  <div class="teks">Tuna Netra</div>
+                </div>
+                <div class="box2">
+                  <div class="teks">Tuna Rungu</div>
+                </div>
+                <div class="box2">
+                  <div class="teks">Tuna Grahita</div>
+                </div>
+                <div class="box2">
+                  <div class="teks">Disabilitas Lainnya</div>
+                </div>
+              </div>
+              <div class="bungkus-box">
+                <div class="box2">
+                  <div class="teks" id="daksa"></div>
+                </div>
+                <div class="box2">
+                  <div class="teks" id="netra"></div>
+                </div>
+                <div class="box2">
+                  <div class="teks" id="rungu"></div>
+                </div>
+                <div class="box2">
+                  <div class="teks" id="Grahita"></div>
+                </div>
+                <div class="box2">
+                  <div class="teks" id="lain"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="/assets/javascript/index.js"></script>
+    <script src="/assets/javascript/foto.js"></script>
+    <script src="/assets/javascript/chartrinci1.js"></script>
+    <script src="/assets/javascript/chartrinci2.js"></script>
+    <script src="/assets/javascript/chartrinci3.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/assets/javascript/off.js"></script>
+  </body>
+</html>

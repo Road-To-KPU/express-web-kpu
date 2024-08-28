@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daftar Pemilih Tetap</title>
+    <link rel="shortcut icon" href="/assets/icon-app.png" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/style.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="foto">
+        <img src="/assets/icon-app.png" alt="" />
+        <span class="satu"> KOMISI PEMILIHAN UMUM <br />SULAWESI SELATAN</span>
+      </div>
+      <ul>
+        <li>
+          <a href="/">
+            <i class="bx bxs-grid-alt bx-flip-horizontal"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="/dpt/dpt"
+            ><i class="bx bx-list-ul"></i> <span>Daftar Pemilih Tetap</span></a
+          >
+        </li>
+        <li>
+          <a href="/dptb/dptb"
+            ><i class="bx bx-list-plus"></i>
+            <span>Daftar Pemilih Tambahan</span></a
+          >
+        </li>
+        <li>
+          <a href="">
+            <i class="bx bxs-group"></i> <span>TPS Lokasi Khusus</span></a
+          >
+        </li>
+        <li>
+          <a href=""><i class="bx bxs-buildings"></i> <span>SATKER</span></a>
+        </li>
+        <li>
+          <a href=""
+            ><i class="bx bxs-area"></i> <span>DAPIL</span></a
+          >
+        </li>
+        <li>
+          <a href=""
+            ><i class="bx bxs-pie-chart-alt"></i> <span>Partisipasi Pemilu/Pilkada</span></a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <section class="halaman-utama">
+      <nav>
+        <div class="sidebar-tombol">
+          <i class="bx bx-menu"></i>
+          <span>Daftar Pemilih Tetap</span>
+        </div>
+        <a href="/">
+          <i class="bx bx-log-out"></i>
+          <span>Kembali</span>
+        </a>
+      </nav>
+
+      <div class="konten">
+        <div class="title">
+          <p class="text">PROVINSI SULAWESI SELATAN</p>
+        </div>
+        <div class="filter">
+          <div class="dpt"><a href="">DPT Sulawesi Selatan</a></div>
+          <div class="jk"><a href="/dpt/dpt">DPT Kab/Kota</a></div>
+          <div class="td"><a href="/dpt/disabilitas">Disabilitas</a></div>
+          <div class="tr"><a href="/dpt/klasifikasi_usia">Klasifikasi Usia</a></div>
+          <div class="tg"><a href="https://cekdptonline.kpu.go.id/">Cek DPT ONLINE</a></div>
+          <!--
+          <div class="lain">
+            <a href="/dpt/disabilitaslainnya">Disabilitas Lainnya</a>
+          </div>-->
+        </div>
+        <div class="peta">
+          <div class="lapis">
+            <a
+              href="#luwu_utara"
+              onclick="tampilkanElemen();"
+              class="luwu_utara"
+              id="link"
+              >Luwu Utara</a
+            >
+          </div>
+          <a href="/rincian/dpt/luwu_utara"
+            ><i class="bx bxs-map luwu-utara"></i
+          ></a>
+          <div class="lapis1">
+            <a
+              href="#luwu_timur"
+              onclick="tampilkanElemen();"
+              class="luwu_timur"
+              id="link"
+              >Luwu Timur</a
+            >
+          </div>
+          <a href="/rincian/dpt/luwu_timur"
+            ><i class="bx bxs-map luwu-timur"></i
+          ></a>
+          <div class="lapis2">
+            <a
+              href="#toraja_utara"
+              onclick="tampilkanElemen();"
+              class="toraja_utara"
+              id="link"
+              >Toraja Utara</a
+            >
+          </div>
+          <a href="/rincian/dpt/toraja_utara"><i class="bx bxs-map toraja-utara"></i></a>
+<!--edit-->
+          <div class="lapis2_1">
+            <a
+              href="#palopo"
+              onclick="tampilkanElemen();"
+              class="palopo"
+              id="link"
+              >Palopo</a
+            >
+          </div>
+          <a href="/rincian/dpt/palopo"><i class="bx bxs-map palopo-"></i></a>
+
+
+          <div class="lapis3">
+            <a
+              href="#tana_toraja"
+              onclick="tampilkanElemen();"
+              class="tana_toraja"
+              id="link"
+              >Tana Toraja</a
+            >
+          </div>
+          <a href="/rincian/dpt/tana_toraja"
+            ><i class="bx bxs-map tana-toraja"></i
+          ></a>
+          <div class="lapis4">
+            <a href="#luwu" onclick="tampilkanElemen();" class="luwu" id="link"
+              >Luwu</a
+            >
+          </div>
+          <a href="/rincian/dpt/luwu"><i class="bx bxs-map luwu-"></i></a>
+          <div class="lapis5">
+            <a
+              href="#enrekang"
+              onclick="tampilkanElemen();"
+              class="enrekang"
+              id="link"
+              >Enrekang</a
+            >
+          </div>
+          <a href="/rincian/dpt/enrekang"
+            ><i class="bx bxs-map enrekang-"></i
+          ></a>
+          <div class="lapis6">
+            <a
+              href="#pinrang"
+              onclick="tampilkanElemen();"
+              class="pinrang"
+              id="link"
+              >Pinrang</a
+            >
+          </div>
+          <a href="/rincian/dpt/pinrang"><i class="bx bxs-map pinrang-"></i></a>
+          <div class="lapis7">
+            <a
+              href="#sidrap"
+              onclick="tampilkanElemen();"
+              class="sidrap"
+              id="link"
+              >Sidrap</a
+            >
+          </div>
+          <a href="/rincian/dpt/sidrap"><i class="bx bxs-map sidrap-"></i></a>
+<!--edit-->
+          <div class="lapis7_1">
+            <a
+              href="#parepare"
+              onclick="tampilkanElemen();"
+              class="parepare"
+              id="link"
+              >Parepare</a
+            >
+          </div>
+          <a href="/rincian/dpt/parepare"><i class="bx bxs-map parepare-"></i></a>
+
+
+
+          <div class="lapis8">
+            <a href="#wajo" onclick="tampilkanElemen();" class="wajo" id="link"
+              >Wajo</a
+            >
+          </div>
+          <a href="/rincian/dpt/wajo"><i class="bx bxs-map wajo-"></i></a>
+          <div class="lapis9">
+            <a
+              href="#soppeng"
+              onclick="tampilkanElemen();"
+              class="soppeng"
+              id="link"
+              >Soppeng</a
+            >
+          </div>
+          <a href="/rincian/dpt/soppeng"><i class="bx bxs-map soppeng-"></i></a>
+          <div class="lapis10">
+            <a
+              href="#barru"
+              onclick="tampilkanElemen();"
+              class="barru"
+              id="link"
+              >Barru</a
+            >
+          </div>
+          <a href="/rincian/dpt/barru"><i class="bx bxs-map barru-"></i></a>
+          <div class="lapis11">
+            <a href="#bone" onclick="tampilkanElemen();" class="bone" id="link"
+              >Bone</a
+            >
+          </div>
+          <a href="/rincian/dpt/bone"><i class="bx bxs-map bone-"></i></a>
+          <div class="lapis12">
+            <a
+              href="#maros"
+              onclick="tampilkanElemen();"
+              class="maros"
+              id="link"
+              >Maros</a
+            >
+          </div>
+          <a href="/rincian/dpt/maros"><i class="bx bxs-map maros-"></i></a>
+          <div class="lapis13">
+            <a
+              href="#pangkep"
+              onclick="tampilkanElemen();"
+              class="pangkep"
+              id="link"
+              >Pangkep</a
+            >
+          </div>
+          <a href="/rincian/dpt/pangkep"><i class="bx bxs-map pangkep-"></i></a>
+          <div class="lapis14">
+            <a
+              href="#sinjai"
+              onclick="tampilkanElemen();"
+              class="sinjai"
+              id="link"
+              >Sinjai</a
+            >
+          </div>
+          <a href="/rincian/dpt/sinjai"><i class="bx bxs-map sinjai-"></i></a>
+          <div class="lapis15">
+            <a href="#gowa" onclick="tampilkanElemen();" class="gowa" id="link"
+              >Gowa</a
+            >
+          </div>
+          <a href="/rincian/dpt/gowa"><i class="bx bxs-map gowa-"></i></a>
+          <div class="lapis16">
+            <a
+              href="#bulukumba"
+              onclick="tampilkanElemen();"
+              class="bulukumba"
+              id="link"
+              >Bulukumba</a
+            >
+          </div>
+          <a href="/rincian/dpt/bulukumba"
+            ><i class="bx bxs-map bulukumba-"></i
+          ></a>
+          <div class="lapis17">
+            <a
+              href="#bantaeng"
+              onclick="tampilkanElemen();"
+              class="bantaeng"
+              id="link"
+              >Bantaeng</a
+            >
+          </div>
+          <a href="/rincian/dpt/bantaeng"
+            ><i class="bx bxs-map bantaeng-"></i
+          ></a>
+<!--edit-->
+          <div class="lapis17_1">
+            <a
+              href="#jeneponto"
+              onclick="tampilkanElemen();"
+              class="jeneponto"
+              id="link"
+              >Jeneponto</a
+            >
+          </div>
+          <a href="/rincian/dpt/jeneponto"
+            ><i class="bx bxs-map jeneponto-"></i
+          ></a>
+
+
+          <div class="lapis18">
+            <a
+              href="#takalar"
+              onclick="tampilkanElemen();"
+              class="takalar"
+              id="link"
+              >Takalar</a
+            >
+          </div>
+          <a href="/rincian/dpt/takalar"><i class="bx bxs-map takalar-"></i></a>
+          <div class="lapis19">
+            <a
+              href="#makassar"
+              onclick="tampilkanElemen();"
+              class="makassar"
+              id="link"
+              >Makassar</a
+            >
+          </div>
+          <a href="/rincian/dpt/makassar"
+            ><i class="bx bxs-map makassar-"></i
+          ></a>
+
+
+<!-- --edit-- -->
+          <div class="lapis19_1">
+            <a
+              href="#makassar"
+              onclick="tampilkanElemen();"
+              class="makassar"
+              id="link"
+              >Sulsel</a
+            >
+          </div>
+          <a href="/rincian/dpt/makassar"
+            ><i class="bx bxs-map sulsel-"></i
+          ></a>
+
+
+          <div class="lapis20">
+            <a
+              href="#selayar"
+              onclick="tampilkanElemen();"
+              class="selayar"
+              id="link"
+              >Selayar</a
+            >
+          </div>
+          <a href="/rincian/dpt/selayar"><i class="bx bxs-map selayar-"></i></a>
+          <img src="/assets/peta sulsel1.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="modal container">
+      <div class="modal__container" id="modal-container">
+        <div class="modal__content">
+          <div class="judul2">
+            <div class="isi1"></div>
+          </div>
+          <div class="rinci">
+            <div class="kiri">
+              <span id="keterangan1"></span>
+            </div>
+            <div class="kanan">
+              <span id="keterangan"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <script src="/assets/javascript/index.js"></script>
+    <script src="/assets//javascript/tahapandpt.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/assets/javascript/off.js"></script>
+  </body>
+</html>
