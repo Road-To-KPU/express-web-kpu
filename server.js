@@ -8,8 +8,10 @@ const app = express();
 app.use("/assets", express.static("assets"));
 
 const connection = mysql.createConnection({
-  host: "localhost",
+  host: "if.unismuh.ac.id",
   user: "root",
+  port:"3388",
+  password :"mariabelajar",
   database: "datapemilih",
 });
 
